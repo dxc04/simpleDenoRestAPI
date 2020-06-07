@@ -11,3 +11,9 @@
 ## Update Cache
 
 `deno run -r app.ts` then `denon start`
+
+## Run migration
+
+`deno run --allow-net --allow-read https://deno.land/x/nessie/cli.ts migrate`
+
+Migration uses https://deno.land/x/nessie
