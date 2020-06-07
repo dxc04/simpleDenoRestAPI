@@ -5,13 +5,13 @@ import {
   Jose,
   Payload,
 } from "https://deno.land/x/djwt/create.ts";
-import nanoid from "https://deno.land/x/nanoid/mod.ts";
 import * as bcrypt from "https://deno.land/x/bcrypt/mod.ts";
 
 import { JwtConfig } from "../../middlewares/jwt.ts";
 
 export interface IUser {
   id?: string;
+  username: string;
   firstName: string;
   lastName: string;
   password: string;
@@ -26,6 +26,9 @@ export class User extends Model {
       primaryKey: true,
       type: DATA_TYPES.STRING,
     },
+    username: {
+      type: DATA_TYPES.STRING,
+    },
     firstName: {
       type: DATA_TYPES.STRING,
     },
@@ -38,7 +41,7 @@ export class User extends Model {
   };
 
   static defaults = {
-    id: nanoid(),
+
   };
 
   static generateJwt(id: string) {

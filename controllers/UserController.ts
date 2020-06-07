@@ -8,6 +8,7 @@ export class UserController implements BaseController<IUser> {
     const password = await User.hashPassword(values.password);
 
     const user: IUser = {
+      username: values.username,
       firstName: values.firstName,
       lastName: values.lastName,
       password,
