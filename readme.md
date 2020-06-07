@@ -1,3 +1,9 @@
+# A modified version of https://github.com/Trobyss/deno-api-rest-jwt
+
+## Copy .env.example to .env and modify it with your config
+
+`cp .env.example .env`
+
 ## Install
 
 - install [denon](https://deno.land/x/denon/)
