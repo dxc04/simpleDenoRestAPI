@@ -1,4 +1,4 @@
-# A modified version of https://github.com/Trobyss/deno-api-rest-jwt
+A modified version of https://github.com/Trobyss/deno-api-rest-jwt
 
 ## Copy .env.example to .env and modify it with your config
 
