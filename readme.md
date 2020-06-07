@@ -1,5 +1,3 @@
-# Deno REST API using JWT
-
 ## Install
 
 - install [denon](https://deno.land/x/denon/)
