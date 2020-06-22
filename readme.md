@@ -1,6 +1,6 @@
 A modified version of https://github.com/Trobyss/deno-api-rest-jwt
 
-#Additions#
+## Additions ##
 * Migrations
 
 ## Copy .env.example to .env and modify it with your config
